@@ -1,0 +1,44 @@
+.item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 22px;
+
+  .left {
+    display: flex;
+    align-items: center;
+
+    .currency-name {
+      color: #4b5e7c;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+  }
+
+  .right {
+    text-align: right;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .currency {
+      color: #4b5e7c;
+
+      .naira {
+        font-size: 14px;
+        color: #6f7fa0;
+      }
+    }
+  }
+
+  &:hover {
+    background: #f9f9fa;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,8 @@
+.balances {
+  color: #687897;
+  font-weight: 500;
+
+  li ~ li {
+    border-top: 1px solid #e1e3e7;
+  }
+}
