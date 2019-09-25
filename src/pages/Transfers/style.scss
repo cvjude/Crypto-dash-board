@@ -1,0 +1,54 @@
+.transfers {
+  color: #687897;
+
+  header {
+    padding: 20px 30px 15px;
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      width: 120px;
+      padding: 5px 10px;
+      background: #67c462;
+      color: white;
+      border: 1px solid #67c462;
+      border-radius: 4px;
+      font-size: 14px;
+
+      .transfer-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .reference {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    text-align: left;
+    background: #f9f9fa;
+    padding: 15px 30px;
+    border-top: 1px solid #e1e3e7;
+    border-bottom: 1px solid #e1e3e7;
+    font-weight: 500;
+
+    .align-right {
+      text-align: right;
+    }
+  }
+
+  .transfers {
+    padding-top: 80px;
+    height: 320px;
+    color: #203354;
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-weight: 500;
+    }
+  }
+}

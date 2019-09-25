@@ -16,10 +16,12 @@ class MainSection extends Component {
 
   render() {
     const {
-      location: { pathname }
+      location: { pathname },
+      history
     } = this.props;
     const { value } = this.state;
     const pathName = pathname.substr(1);
+    if (pathName === '') history.push('./balances');
     return (
       <div className='main-header'>
         <h2 className='head'>
