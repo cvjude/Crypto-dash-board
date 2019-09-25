@@ -23,7 +23,7 @@ export default function Transfers() {
           </div>
           <div className='transfers'>
             <h2>You haven't made any transfers yet</h2>
-            <p>Your tansfers will be displayd here</p>
+            <p>Your tansfers will be displayed here</p>
           </div>
         </div>
       }
