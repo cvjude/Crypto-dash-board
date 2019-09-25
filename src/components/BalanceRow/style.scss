@@ -1,9 +1,13 @@
+.list {
+  min-height: 80px;
+}
+
 .item {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 22px;
+  padding: 20px 22px;
 
   .left {
     display: flex;

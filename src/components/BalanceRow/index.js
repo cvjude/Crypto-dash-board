@@ -10,7 +10,7 @@ export default function Balances({
   pendingPriceNgn
 }) {
   return (
-    <li className='item'>
+    <li className='item list'>
       <div className='left'>
         <img src={image} alt='' />
         <p className='currency-name'>{currencyName}</p>

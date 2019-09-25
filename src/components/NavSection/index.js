@@ -5,6 +5,7 @@ import DownArrow from '../../assets/Icons/DownArrow';
 import Home from '../../assets/Icons/Home';
 import Payment from '../../assets/Icons/Payment';
 import Wallet from '../../assets/Icons/Wallet';
+import Add from '../../assets/Icons/Add';
 import Settings from '../../assets/Icons/Settings';
 import Transfers from '../../assets/Icons/Transfers';
 
@@ -83,6 +84,13 @@ const NavSection = () => {
             Settings
           </NavLink>
         </ul>
+
+        <button>
+          <div className='transfer-button'>
+            <Add width='15px' height='15px' />
+            <p>Accept payment</p>
+          </div>
+        </button>
       </main>
     </section>
   );

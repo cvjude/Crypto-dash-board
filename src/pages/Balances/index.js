@@ -4,7 +4,9 @@ import ListItem from '../../components/BalanceRow';
 import './style.scss';
 import lists from '../../assets/lists';
 
-const list = lists.map(listItem => <ListItem {...listItem} />);
+const list = lists.map((listItem, index) => (
+  <ListItem key={index} {...listItem} />
+));
 
 export default function Balances() {
   return (
