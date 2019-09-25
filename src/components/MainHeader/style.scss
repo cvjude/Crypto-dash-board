@@ -1,0 +1,121 @@
+$color_checkbox_success: #67c462;
+$color_checkbox_default: #8e8e93;
+$transition: 0.3s ease;
+$width: 2em;
+$height: $width/2;
+
+.main-header {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #203354;
+
+  .head {
+    font-size: 30px;
+  }
+
+  .right {
+    display: flex;
+    width: auto;
+    align-items: center;
+
+    .slide-description {
+      font-weight: bold;
+    }
+
+    .slide-button {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+
+      .toggle {
+        margin-right: 10px;
+
+        .toggle-control {
+          transition: $transition;
+          width: $width;
+          height: $height;
+          display: block;
+          border: 2px solid $color_checkbox_default;
+          border-radius: $height;
+          background-color: rgba(black, 0.06);
+          position: relative;
+          &:after {
+            transition: $transition;
+            content: '';
+            width: $width/2;
+            height: $height;
+            display: block;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            border: 1px solid $color_checkbox_default;
+          }
+        }
+
+        input {
+          display: none;
+          &:checked + .toggle-control {
+            border-color: $color_checkbox_success;
+            background-color: $color_checkbox_success;
+            &:after {
+              left: $width/2;
+              border: 1px solid #93c191;
+            }
+          }
+        }
+      }
+    }
+
+    .notification {
+      margin-right: 30px;
+      position: relative;
+
+      .notify-num {
+        background: #de3618;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        top: 2px;
+        right: 0px;
+
+        p {
+          color: white;
+          font-size: 10px;
+        }
+      }
+    }
+
+    .user-profile {
+      display: flex;
+
+      .user-logo {
+        background: #d8d8d8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        margin-right: 10px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .user-name {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+  }
+}

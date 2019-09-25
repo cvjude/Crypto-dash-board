@@ -67,7 +67,7 @@ const NavSection = () => {
           <NavLink
             className='nav-link'
             activeClassName='activeRoute'
-            to='/developer'
+            to='/developers'
           >
             <div className='link-icon'>{'{/}'}</div>
             Developers
