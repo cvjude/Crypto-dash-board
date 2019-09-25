@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './style.scss';
-import DownArrow from '../../assets/DownArrow';
-import Home from '../../assets/Home';
-import Payment from '../../assets/Payment';
-import Wallet from '../../assets/Wallet';
-import Settings from '../../assets/Settings';
-import Transfers from '../../assets/Transfers';
+import DownArrow from '../../assets/Icons/DownArrow';
+import Home from '../../assets/Icons/Home';
+import Payment from '../../assets/Icons/Payment';
+import Wallet from '../../assets/Icons/Wallet';
+import Settings from '../../assets/Icons/Settings';
+import Transfers from '../../assets/Icons/Transfers';
 
 const NavSection = () => {
   return (
