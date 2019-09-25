@@ -30,6 +30,7 @@ $height: $width/2;
 
       .toggle {
         margin-right: 10px;
+        cursor: pointer;
 
         .toggle-control {
           transition: $transition;
